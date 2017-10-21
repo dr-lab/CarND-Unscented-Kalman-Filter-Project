@@ -58,6 +58,7 @@ int main()
           
           string sensor_measurment = j[1]["sensor_measurement"];
           
+            std::cout << "Received Message from simulator:" << std::endl;
           std::cout << sensor_measurment << std::endl;
             std::cout << "" << std::endl;
             
@@ -142,6 +143,7 @@ int main()
           auto msg = "42[\"estimate_marker\"," + msgJson.dump() + "]";
           
           //print out the msg
+            std::cout << "Sent message to simulator after processing" << std::endl;
           std::cout << msg << std::endl;
             std::cout << "" << std::endl;
             std::cout << "" << std::endl;
